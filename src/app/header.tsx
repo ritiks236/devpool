@@ -14,6 +14,8 @@ export const Header = () => {
         ) : (
           <Button onClick={() => signIn()}>Sign In</Button>
         )}
+
+        {session.data?.user?.name}
         <ModeToggle />
       </div>
     </header>
